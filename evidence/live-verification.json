@@ -1,0 +1,443 @@
+{
+  "network": "Stable Studionet",
+  "chain_id": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "contract_address": "0xEedB8c6f3d3aa7b736f226c5E1B7d5D633e077FA",
+  "deploy_tx": "0xb05c47fb634ea15f12882619b174b1a510916b0e8f557dd883473020a017d282",
+  "deploy_source_sha256": "fc10458b147bd0e031c4a9ec087064baf47cdd22581a7f7d7fbe32b3b7f9e7f6",
+  "accounts": {
+    "creator": "0x0A1f89d650F290360c9FD41D9008f2Ef4DBaCfbF",
+    "bettor_b": "0x9c2F1917D11E3C8A0F13784Cf2Aa5c5E9E18d6D4",
+    "bettor_c": "0xf7a04fB68da837F2580A42C666eF571a84630bcd"
+  },
+  "steps": [
+    {
+      "step": "deploy",
+      "method": "__init__",
+      "args": [],
+      "tx_hash": "0xb05c47fb634ea15f12882619b174b1a510916b0e8f557dd883473020a017d282",
+      "hash": "0xb05c47fb634ea15f12882619b174b1a510916b0e8f557dd883473020a017d282",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "contract_address": "0xEedB8c6f3d3aa7b736f226c5E1B7d5D633e077FA"
+    },
+    {
+      "step": "creator claim_test_gen",
+      "method": "claim_test_gen",
+      "args": [],
+      "tx_hash": "0xf3faeb85ba0ca0cbf17d8eef5191443cacfea1a827c596c19828a686e9f23bb8",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xf3faeb85ba0ca0cbf17d8eef5191443cacfea1a827c596c19828a686e9f23bb8",
+      "contract_address": null
+    },
+    {
+      "step": "bettor_b claim_test_gen",
+      "method": "claim_test_gen",
+      "args": [],
+      "tx_hash": "0xb43135b3e0120fed229c23d861c6e6eeb90c96292996835a71c10097ad83cf67",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xb43135b3e0120fed229c23d861c6e6eeb90c96292996835a71c10097ad83cf67",
+      "contract_address": null
+    },
+    {
+      "step": "bettor_c claim_test_gen",
+      "method": "claim_test_gen",
+      "args": [],
+      "tx_hash": "0xea64f0c08f7d868876f24d966bc99edc9247643c673e6594f47ce82ca535987d",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xea64f0c08f7d868876f24d966bc99edc9247643c673e6594f47ce82ca535987d",
+      "contract_address": null
+    },
+    {
+      "step": "market1: create_market",
+      "method": "create_market",
+      "args": [
+        "Which candidate won the 2024 US presidential election?",
+        "Donald Trump|Kamala Harris|Other candidate",
+        "The market settles on the candidate named as the winner in the attached evidence. The evidence must name the winner, the",
+        "Polymarket 2024 US presidential election contract settlement"
+      ],
+      "tx_hash": "0x0d8833ef608a28b162a6d4ebbd0069533cb97cc7a0c52976f944d08b24d88eb5",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x0d8833ef608a28b162a6d4ebbd0069533cb97cc7a0c52976f944d08b24d88eb5",
+      "contract_address": null
+    },
+    {
+      "step": "market1: bet creator 60 GEN on outcome 0",
+      "method": "bet",
+      "args": [
+        "1",
+        "0",
+        "60000000"
+      ],
+      "tx_hash": "0x33a2784fe6a44447f1105cccf39c551c4f04b7a3c3a34b2ed26baa2ff11589c1",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x33a2784fe6a44447f1105cccf39c551c4f04b7a3c3a34b2ed26baa2ff11589c1",
+      "contract_address": null
+    },
+    {
+      "step": "market1: bet bettor_b 30 GEN on outcome 1",
+      "method": "bet",
+      "args": [
+        "1",
+        "1",
+        "30000000"
+      ],
+      "tx_hash": "0x24993c5b00d81999a5126173844f3090dd2315ad8f46de43da4a2b3da67dd81f",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x24993c5b00d81999a5126173844f3090dd2315ad8f46de43da4a2b3da67dd81f",
+      "contract_address": null
+    },
+    {
+      "step": "market1: bet bettor_c 10 GEN on outcome 2",
+      "method": "bet",
+      "args": [
+        "1",
+        "2",
+        "10000000"
+      ],
+      "tx_hash": "0x33ea67595d0b224d01ceb2f4830dc1f3b37917cdc3ca4529876c832586bb9074",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x33ea67595d0b224d01ceb2f4830dc1f3b37917cdc3ca4529876c832586bb9074",
+      "contract_address": null
+    },
+    {
+      "step": "market1: propose_outcome 0",
+      "method": "propose_outcome",
+      "args": [
+        "1",
+        "0",
+        "The 2024 US presidential election was won by Donald Trump. Polymarket's largest binary contract, with over 3.3 billion d"
+      ],
+      "tx_hash": "0x487b7da6cc6855475e22688db86b8a76842be20199717f8d7a9bdac4e57f2273",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x487b7da6cc6855475e22688db86b8a76842be20199717f8d7a9bdac4e57f2273",
+      "contract_address": null
+    },
+    {
+      "step": "market1: adjudicate",
+      "method": "adjudicate",
+      "args": [
+        "1"
+      ],
+      "tx_hash": "0xc754e8e4385b58b8d5f92f4eb5c5f452945917f7a4fea3fbac069cd17311e8bd",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xc754e8e4385b58b8d5f92f4eb5c5f452945917f7a4fea3fbac069cd17311e8bd",
+      "contract_address": null
+    },
+    {
+      "step": "market1: settle",
+      "method": "settle",
+      "args": [
+        "1"
+      ],
+      "tx_hash": "0x0279f6fa91eaa61ddd692800c23180c55ab79285825a2a0acb652412ef7663fe",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x0279f6fa91eaa61ddd692800c23180c55ab79285825a2a0acb652412ef7663fe",
+      "contract_address": null
+    },
+    {
+      "step": "market2: create_market",
+      "method": "create_market",
+      "args": [
+        "What bond did Polymarket's UMA optimistic oracle require to dispute a proposed outcome?",
+        "About $750|About $7,500|No bond required",
+        "The market settles on the bond amount named in the attached evidence. The evidence must name the amount, the oracle, and",
+        "Polymarket UMA optimistic oracle dispute rules"
+      ],
+      "tx_hash": "0xdcf1c2507d2177ed388097e9c0217a700d57fe333345730bc34cfc21eeaabc7c",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xdcf1c2507d2177ed388097e9c0217a700d57fe333345730bc34cfc21eeaabc7c",
+      "contract_address": null
+    },
+    {
+      "step": "market2: bet creator 20 GEN on outcome 0",
+      "method": "bet",
+      "args": [
+        "2",
+        "0",
+        "20000000"
+      ],
+      "tx_hash": "0x76f806266ae79ad0a94a93840dc6bc0713acb501e49257e4e7a95f2d2e2ebc1d",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x76f806266ae79ad0a94a93840dc6bc0713acb501e49257e4e7a95f2d2e2ebc1d",
+      "contract_address": null
+    },
+    {
+      "step": "market2: bet bettor_b 20 GEN on outcome 1",
+      "method": "bet",
+      "args": [
+        "2",
+        "1",
+        "20000000"
+      ],
+      "tx_hash": "0xe4a8760b5089dccfac5bfca9cba4bfaba2fb07b42f94865a107dbea7a6eb735d",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xe4a8760b5089dccfac5bfca9cba4bfaba2fb07b42f94865a107dbea7a6eb735d",
+      "contract_address": null
+    },
+    {
+      "step": "market2: bet bettor_c 20 GEN on outcome 2",
+      "method": "bet",
+      "args": [
+        "2",
+        "2",
+        "20000000"
+      ],
+      "tx_hash": "0xc546f6fd83e47c7c2ab4796f2249996e21d9e67760ca36258f56bd2c9f2d4103",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xc546f6fd83e47c7c2ab4796f2249996e21d9e67760ca36258f56bd2c9f2d4103",
+      "contract_address": null
+    },
+    {
+      "step": "market2: propose_outcome 1 (evidence establishes 0)",
+      "method": "propose_outcome",
+      "args": [
+        "2",
+        "1",
+        "Polymarket's UMA optimistic oracle requires anyone proposing an outcome to post a bond of about $750. A dispute requires"
+      ],
+      "tx_hash": "0x54f5fba5d8770b1c00c0d249769dbded787db8210cc2bdc1f6ccfeb94ea7470f",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x54f5fba5d8770b1c00c0d249769dbded787db8210cc2bdc1f6ccfeb94ea7470f",
+      "contract_address": null
+    },
+    {
+      "step": "market2: adjudicate",
+      "method": "adjudicate",
+      "args": [
+        "2"
+      ],
+      "tx_hash": "0xa072ef79b35a041a247c1ea3ad55e8ffcf1aeede5915153e3543f1459bfe39b0",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xa072ef79b35a041a247c1ea3ad55e8ffcf1aeede5915153e3543f1459bfe39b0",
+      "contract_address": null
+    },
+    {
+      "step": "market2: dispute claims 2",
+      "method": "dispute",
+      "args": [
+        "2",
+        "2",
+        "No bond is needed at all, trust me."
+      ],
+      "tx_hash": "0x2447006ded25e74fb7c114ffbe091b1801056192e4a4e6f97377d9c2c10696db",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x2447006ded25e74fb7c114ffbe091b1801056192e4a4e6f97377d9c2c10696db",
+      "contract_address": null
+    },
+    {
+      "step": "market2: adjudicate_dispute",
+      "method": "adjudicate_dispute",
+      "args": [
+        "2"
+      ],
+      "tx_hash": "0x7dc17391aaacea491f594b5b611c984d335b00ea468812a791430fe71631edfc",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x7dc17391aaacea491f594b5b611c984d335b00ea468812a791430fe71631edfc",
+      "contract_address": null
+    },
+    {
+      "step": "market2: settle",
+      "method": "settle",
+      "args": [
+        "2"
+      ],
+      "tx_hash": "0xd7ccac10d03147279c864bb3ba63f225dff5dc6ba7f46e565522630ac5f06351",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xd7ccac10d03147279c864bb3ba63f225dff5dc6ba7f46e565522630ac5f06351",
+      "contract_address": null
+    },
+    {
+      "step": "market3: create_market",
+      "method": "create_market",
+      "args": [
+        "Which candidate won the 2024 US presidential election?",
+        "Donald Trump|Kamala Harris|Other candidate",
+        "The market settles on the candidate named as the winner in the attached evidence. The evidence must name the winner, the",
+        "Polymarket 2024 US presidential election contract settlement"
+      ],
+      "tx_hash": "0x40850a1376e4fb9e3986617a0ab784a270f259351f031878567527e98af5a407",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x40850a1376e4fb9e3986617a0ab784a270f259351f031878567527e98af5a407",
+      "contract_address": null
+    },
+    {
+      "step": "market3: bet creator 10 GEN on outcome 0",
+      "method": "bet",
+      "args": [
+        "3",
+        "0",
+        "10000000"
+      ],
+      "tx_hash": "0x33364a3ec91beeafb2ec68470f83c63822a67de209288ac4c05b18a5a1f33151",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x33364a3ec91beeafb2ec68470f83c63822a67de209288ac4c05b18a5a1f33151",
+      "contract_address": null
+    },
+    {
+      "step": "market3: bet bettor_b 10 GEN on outcome 1",
+      "method": "bet",
+      "args": [
+        "3",
+        "1",
+        "10000000"
+      ],
+      "tx_hash": "0x853d6f3b70dc8274dbd93df858c37d49175464ef2f06b6686753307b750db60d",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x853d6f3b70dc8274dbd93df858c37d49175464ef2f06b6686753307b750db60d",
+      "contract_address": null
+    },
+    {
+      "step": "market3: bet bettor_c 10 GEN on outcome 2",
+      "method": "bet",
+      "args": [
+        "3",
+        "2",
+        "10000000"
+      ],
+      "tx_hash": "0xe3f00a9a257d663f2a38cc393a44577242f1606aa6065149818e39fbd70e0a62",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xe3f00a9a257d663f2a38cc393a44577242f1606aa6065149818e39fbd70e0a62",
+      "contract_address": null
+    },
+    {
+      "step": "market3: propose_outcome 0 (contradictory evidence)",
+      "method": "propose_outcome",
+      "args": [
+        "3",
+        "0",
+        "Source A says Donald Trump won the 2024 US presidential election. Source B says Kamala Harris won the 2024 US presidenti"
+      ],
+      "tx_hash": "0xa038ca1c086e797e706c9cf5026e1d1d8cd1680463d517a36abe4bb02f35db9b",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0xa038ca1c086e797e706c9cf5026e1d1d8cd1680463d517a36abe4bb02f35db9b",
+      "contract_address": null
+    },
+    {
+      "step": "market3: adjudicate",
+      "method": "adjudicate",
+      "args": [
+        "3"
+      ],
+      "tx_hash": "0x4fc246b05272f963aa8bf6b29d9c84191e1f86d42eaf2b0b4370418216fdf2d4",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x4fc246b05272f963aa8bf6b29d9c84191e1f86d42eaf2b0b4370418216fdf2d4",
+      "contract_address": null
+    },
+    {
+      "step": "market3: settle",
+      "method": "settle",
+      "args": [
+        "3"
+      ],
+      "tx_hash": "0x1df6026cf0e4067ac3602eaeefeea72f6992a17b4886da98925546aa3898841c",
+      "status": "FINALIZED",
+      "execution_result": "SUCCESS",
+      "hash": "0x1df6026cf0e4067ac3602eaeefeea72f6992a17b4886da98925546aa3898841c",
+      "contract_address": null
+    }
+  ],
+  "final_readback": {
+    "markets": {
+      "1": {
+        "creator": "0x0A1f89d650F290360c9FD41D9008f2Ef4DBaCfbF",
+        "criteria": "The market settles on the candidate named as the winner in the attached evidence. The evidence must name the winner, the election year, and a deciding source.",
+        "dispute_claim": "",
+        "dispute_count": "0",
+        "dispute_evidence": "",
+        "evidence_source": "Polymarket 2024 US presidential election contract settlement",
+        "history": "CREATED\nBET|1|0|60000000\nBET|2|1|30000000\nBET|3|2|10000000\nPROPOSED|0\nADJUDICATED|OUTCOME|0\nSETTLED|SETTLED_PAID",
+        "id": "1",
+        "outcome_totals": "60000000|30000000|10000000",
+        "outcomes": "Donald Trump|Kamala Harris|Other candidate",
+        "proposal_evidence": "The 2024 US presidential election was won by Donald Trump. Polymarket's largest binary contract, with over 3.3 billion dollars of notional volume, settled on Donald Trump as the winner, confirmed by the official election outcome.",
+        "proposed_outcome": "0",
+        "question": "Which candidate won the 2024 US presidential election?",
+        "status": "SETTLED_PAID",
+        "total_pool": "0",
+        "verdict": "OUTCOME|0"
+      },
+      "2": {
+        "creator": "0x0A1f89d650F290360c9FD41D9008f2Ef4DBaCfbF",
+        "criteria": "The market settles on the bond amount named in the attached evidence. The evidence must name the amount, the oracle, and a deciding source.",
+        "dispute_claim": "2",
+        "dispute_count": "1",
+        "dispute_evidence": "No bond is needed at all, trust me.",
+        "evidence_source": "Polymarket UMA optimistic oracle dispute rules",
+        "history": "CREATED\nBET|4|0|20000000\nBET|5|1|20000000\nBET|6|2|20000000\nPROPOSED|1\nADJUDICATED|OUTCOME|0\nDISPUTED|2\nDISPUTE_ADJUDICATED|OUTCOME|0\nSETTLED|SETTLED_PAID",
+        "id": "2",
+        "outcome_totals": "20000000|20000000|20000000",
+        "outcomes": "About $750|About $7,500|No bond required",
+        "proposal_evidence": "Polymarket's UMA optimistic oracle requires anyone proposing an outcome to post a bond of about $750. A dispute requires a matching bond of about $750, and if the second proposal is also disputed, UMA token holders vote. The deciding source is the UMA optimistic oracle rulebook.",
+        "proposed_outcome": "1",
+        "question": "What bond did Polymarket's UMA optimistic oracle require to dispute a proposed outcome?",
+        "status": "SETTLED_PAID",
+        "total_pool": "0",
+        "verdict": "OUTCOME|0"
+      },
+      "3": {
+        "creator": "0x0A1f89d650F290360c9FD41D9008f2Ef4DBaCfbF",
+        "criteria": "The market settles on the candidate named as the winner in the attached evidence. The evidence must name the winner, the election year, and a deciding source.",
+        "dispute_claim": "",
+        "dispute_count": "0",
+        "dispute_evidence": "",
+        "evidence_source": "Polymarket 2024 US presidential election contract settlement",
+        "history": "CREATED\nBET|7|0|10000000\nBET|8|1|10000000\nBET|9|2|10000000\nPROPOSED|0\nADJUDICATED|INVALID\nSETTLED|SETTLED_REFUNDED",
+        "id": "3",
+        "outcome_totals": "10000000|10000000|10000000",
+        "outcomes": "Donald Trump|Kamala Harris|Other candidate",
+        "proposal_evidence": "Source A says Donald Trump won the 2024 US presidential election. Source B says Kamala Harris won the 2024 US presidential election. The two sources disagree and no deciding source is named.",
+        "proposed_outcome": "0",
+        "question": "Which candidate won the 2024 US presidential election?",
+        "status": "SETTLED_REFUNDED",
+        "total_pool": "0",
+        "verdict": "INVALID"
+      }
+    },
+    "platform_pool_microgen": "3200000",
+    "creator_balance_microgen": "1076800000",
+    "bettor_b_balance_microgen": "950000000",
+    "bettor_c_balance_microgen": "970000000",
+    "demos": {
+      "normal_settled": true,
+      "dispute_adjudicated": true,
+      "invalid_refunded": true
+    },
+    "readback_method": "genlayer-py read_contract calls against Stable Studionet after all transactions reached FINALIZED; no new transactions were sent for the read-back."
+  },
+  "notes": [
+    "market1 odds after bets: 6000|3000|1000",
+    "market1: verdict OUTCOME|0, settled SETTLED_PAID, pool was 100 GEN, outcome totals 60000000|30000000|10000000.",
+    "market2: first verdict OUTCOME|0, dispute verdict OUTCOME|0, settled SETTLED_PAID, pool was 60 GEN.",
+    "market3: verdict INVALID, settled SETTLED_REFUNDED, pool was 30 GEN.",
+    "demos demonstrated: {'normal_settled': True, 'dispute_adjudicated': True, 'invalid_refunded': True}",
+    "Final read-back: the get_market read for market 4 failed 10 times and was logged as expected -- market 4 was never created because the INVALID demo was already demonstrated on market 3, so the fallback market was not needed. Markets 1-3, all balances and the platform pool read back successfully.",
+    "Balance reconciliation (microGEN): creator 1076800000 = 1000000000 - 60000000 - 20000000 - 10000000 + 98000000 + 58800000 + 10000000; bettor_b 950000000 = 1000000000 - 30000000 - 20000000 - 10000000 + 10000000; bettor_c 970000000 = 1000000000 - 10000000 - 20000000 - 10000000 + 10000000; platform pool 3200000 = 2000000 (2% of market1 100 GEN pool) + 1200000 (2% of market2 60 GEN pool); market3 INVALID charged no fee."
+  ]
+}
