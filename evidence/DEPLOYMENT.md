@@ -7,7 +7,7 @@
 - Deploy transaction: `0xb05c47fb634ea15f12882619b174b1a510916b0e8f557dd883473020a017d282`
 - Deployed source: `contracts/prediction_market.py`
 - Source SHA256: `fc10458b147bd0e031c4a9ec087064baf47cdd22581a7f7d7fbe32b3b7f9e7f6`
-- Source commit: (filled in after the first push)
+- Source commit: `acfaf5e` (the deployed file is byte-identical to the file in this repository — see the SHA256 above)
 - Runner: `py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6` (pinned; the network rejects the `latest`/`test` aliases)
 - Live actors (ephemeral script accounts, addresses only): creator `0x0A1f89d650F290360c9FD41D9008f2Ef4DBaCfbF`, bettor_b `0x9c2F1917D11E3C8A0F13784Cf2Aa5c5E9E18d6D4`, bettor_c `0xf7a04fB68da837F2580A42C666eF571a84630bcd`
 
